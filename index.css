@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Cambria;
+	font-size: 1.25em;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-color: #ffffff;
+}
+
+header {
+	/* Cho ra giữa */
+	text-align: center;
+	/* cách dòng trên dưới 16 pixels */
+	padding: 16px 0;
+
+	/* chữ màu trắng */
+	color: #ffffff;
+	/* nền xanh */
+	background-color: #2ed573;
+}
+
+/* Tất cả nội dung trong class container hay Phần ở giữa */
+.container {
+	/* 75% độ cao */
+	min-height: 75vh;
+	/* hiển thị mặc định dàn hàng ngang */
+	display: flex;
+}
+
+aside {
+	/*cách lề trên dưới 24px trái phải 32 px */
+	padding: 24px 32px;
+}
+
+.menu {
+	display: flex;
+	/* mặc định dàn hàng dọc */
+	flex-direction: column;
+	/* menu cách add a new car 16px */
+	row-gap: 16px;
+	position: sticky;
+	/* khi dữ liệu quá dài, khi lăn xuống menu ở bên sẽ không bị chạy lên trên */
+	top: 16px;
+}
+
+.vr {
+	/* Độ rộng cột dọc chia trang */
+	width: 8px;
+	background-color: #2ed573;
+}
+
+main {
+	/* nội dung dữ liệu ở giữa màn hình */
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	text-align: center;
+	padding: 16px 0;
+	color: #ffffff;
+	background-color: #212529;
+}
